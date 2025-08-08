@@ -39,4 +39,14 @@ public class Associato implements Serializable {
     public int getNumeroTessera() {
         return numeroTessera;
     }
+
+    public String toString() {
+        return  "\n***************************\n" +
+                "\nNOME: " + nome +
+                "\nCOGNOME: " + cognome +
+                "\nNUMERO TESSERA: " + numeroTessera +
+                "\nTELEFONO: " + telefono +
+                "\nEMAIL: " + email +
+                "\n***************************\n";
+    }
 }
