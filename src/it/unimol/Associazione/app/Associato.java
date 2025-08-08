@@ -1,6 +1,10 @@
 package it.unimol.Associazione.app;
 
-public class Associato {
+import java.io.Serializable;
+
+public class Associato implements Serializable {
+
+    public static final long serialVersionUID = 1L;
 
     private String nome;
     private String cognome;
