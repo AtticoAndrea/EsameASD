@@ -1,5 +1,7 @@
 package it.unimol.Associazione.app;
 
+import it.unimol.Associazione.exceptions.InvalidAssociatoException;
+
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
@@ -36,7 +38,7 @@ public class GestoreAssociati implements Serializable {
         associati = new HashMap<Integer, GestoreAssociati>();
     }
 
-    public void addSocio(Associato associato) throws InvalidAssociatoException{
+    public void addSocio(Associato associato) throws InvalidAssociatoException {
 
     }
 
