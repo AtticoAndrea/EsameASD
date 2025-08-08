@@ -1,5 +1,9 @@
+import it.unimol.Associazione.ui.SchermataPrincipale;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+
+        SchermataPrincipale principale = new SchermataPrincipale();
+        principale.esegui();
     }
 }

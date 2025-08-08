@@ -59,6 +59,7 @@ public class GestoreAssociati implements Serializable {
     public void removeSocio(int numeroTessera) throws InvalidAssociatoException {
         if(isPresent(numeroTessera)){
             associati.remove(numeroTessera);
+            save();
         } else {
             throw new InvalidAssociatoException();
         }
@@ -67,6 +68,7 @@ public class GestoreAssociati implements Serializable {
     public void removeSocio(Associato associato) throws InvalidAssociatoException {
         if(isPresent(associato.getNumeroTessera())){
             associati.remove(associato.getNumeroTessera());
+            save();
         } else {
             throw new InvalidAssociatoException();
         }
