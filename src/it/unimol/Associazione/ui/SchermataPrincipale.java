@@ -60,7 +60,13 @@ public class SchermataPrincipale {
 
     }
 
-    private void avviaSchermataRimozione(Scanner sc) {}
+    private void avviaSchermataRimozione(Scanner sc) {
+        SchermataRimozione sr = new SchermataRimozione(sc, gestore);
+        sr.esegui();
+    }
 
-    private void avviaSchermataRicerca(Scanner sc) {}
+    private void avviaSchermataRicerca(Scanner sc) {
+        SchermataRicerca sr = new SchermataRicerca(sc, gestore);
+        sr.esegui();
+    }
 }
