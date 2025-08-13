@@ -1,4 +1,4 @@
-package it.unimol.Associazione.test;
+package test;
 
 import it.unimol.Associazione.app.Associato;
 import it.unimol.Associazione.app.GestoreAssociati;
@@ -34,4 +34,3 @@ public class GestoreAssociatiTest {
     }
 
 }
-
