@@ -2,7 +2,7 @@ package it.unimol.esameASD.ui;
 
 
 import it.unimol.esameASD.app.GestoreAssociati;
-
+import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 public class SchermataPrincipale {
@@ -31,7 +31,7 @@ public class SchermataPrincipale {
     }
 
     private boolean gestisciInput() {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in, StandardCharsets.UTF_8);
         int scelta = Integer.parseInt(sc.nextLine());
         switch (scelta) {
             case 1:
