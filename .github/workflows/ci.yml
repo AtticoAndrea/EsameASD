@@ -42,3 +42,7 @@ jobs:
 
       - name: Check code style with Checkstyle
         run: mvn checkstyle:check --batch-mode --no-transfer-progress
+
+      - name: Run SpotBugs analysis
+        run: mvn com.github.spotbugs:spotbugs-maven-plugin:check --batch-mode --no-transfer-progress
+
