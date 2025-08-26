@@ -49,9 +49,4 @@ jobs:
       - name: Build Docker image
         run: docker build -t esame-asd-app .
 
-      - name: Create data directory
-        run: mkdir -p data
-
-      - name: Run container with volume
-        run: docker run --rm -v ${{ github.workspace }}/data:/app/data esame-asd-app
 
