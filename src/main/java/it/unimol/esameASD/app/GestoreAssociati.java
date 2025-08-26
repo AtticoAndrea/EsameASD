@@ -16,7 +16,7 @@ public class GestoreAssociati implements Serializable {
 
     public static GestoreAssociati getInstance() {
         try(
-                FileInputStream fis = new FileInputStream("gestoreAssociati.txt");
+                FileInputStream fis = new FileInputStream("data/gestoreAssociati.txt");
                 ObjectInputStream ois = new ObjectInputStream(fis);
         ) {
             instance = (GestoreAssociati) ois.readObject();
@@ -91,7 +91,7 @@ public class GestoreAssociati implements Serializable {
 
     private void save(){
         try(
-                FileOutputStream fos = new FileOutputStream("gestoreAssociati.txt");
+                FileOutputStream fos = new FileOutputStream("data/gestoreAssociati.txt");
                 ObjectOutputStream oos = new ObjectOutputStream(fos);
         ) {
             oos.writeObject(this);
